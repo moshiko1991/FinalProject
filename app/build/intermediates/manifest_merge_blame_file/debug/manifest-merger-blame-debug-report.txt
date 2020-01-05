@@ -1,0 +1,408 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="moshiko.study.appupload"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:7:5-65
+12-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:7:22-62
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:8:5-81
+13-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:8:22-78
+14
+15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:25:5-79
+17-->[com.google.firebase:firebase-database:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:25:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/156f946ae01c324cb8270e4ec3cfe231/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:5-68
+18-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/156f946ae01c324cb8270e4ec3cfe231/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:26:22-79
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+20-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+21
+22    <application
+22-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:10:5-92:19
+23        android:allowBackup="true"
+23-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:11:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/3bcafbc2e95e113b9db4402c8bff255d/core-1.1.0/AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:hardwareAccelerated="false"
+26-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:18:9-44
+27        android:icon="@mipmap/ic_launcher"
+27-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:12:9-43
+28        android:label="@string/app_name"
+28-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:13:9-41
+29        android:largeHeap="true"
+29-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:19:9-33
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:14:9-54
+31        android:supportsRtl="true"
+31-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:15:9-35
+32        android:theme="@style/AppTheme" >
+32-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:16:9-40
+33        <activity android:name="moshiko.study.appupload.ThereProfileActivity" />
+33-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:20:9-67
+33-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:20:19-55
+34        <activity android:name="moshiko.study.appupload.AddPostActivity" />
+34-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:21:9-53
+34-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:21:19-50
+35        <activity
+35-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:22:9-24:49
+36            android:name="moshiko.study.appupload.ChatActivity"
+36-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:23:13-41
+37            android:theme="@style/AppThemeNo" />
+37-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:24:13-46
+38        <!--
+39 Set custom default icon. This is used when no icon is set for incoming notification messages.
+40     See README(https://goo.gl/l4GJaQ) for more.
+41        -->
+42        <meta-data
+42-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:29:9-31:59
+43            android:name="com.google.firebase.messaging.default_notification_icon"
+43-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:30:13-83
+44            android:resource="@drawable/ic_default_img" />
+44-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:31:13-56
+45        <!--
+46 Set color used with incoming notification messages. This is used when no color is set for the incoming
+47             notification message. See README(https://goo.gl/6BKBk7) for more.
+48        -->
+49        <meta-data
+49-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:36:9-38:53
+50            android:name="com.google.firebase.messaging.default_notification_color"
+50-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:37:13-84
+51            android:resource="@color/colorAccent" />
+51-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:38:13-50
+52        <meta-data
+52-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:39:9-41:71
+53            android:name="com.google.firebase.messaging.default_notification_channel_id"
+53-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:40:13-89
+54            android:value="@string/default_notification_channel_id" />
+54-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:41:13-68
+55        <meta-data
+55-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:42:9-44:37
+56            android:name="firebase_messaging_auto_init_enabled"
+56-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:43:13-64
+57            android:value="false" />
+57-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:44:13-34
+58        <meta-data
+58-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:45:9-47:37
+59            android:name="firebase_analytics_collection_enabled"
+59-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:46:13-65
+60            android:value="false" />
+60-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:47:13-34
+61        <meta-data
+61-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:48:9-50:36
+62            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+62-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:49:13-69
+63            android:value="true" />
+63-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:50:13-33
+64
+65        <activity
+65-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:52:9-55:59
+66            android:name="moshiko.study.appupload.DashboardActivity"
+66-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:53:13-46
+67            android:label="@string/title_activity_profile"
+67-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:54:13-59
+68            android:theme="@style/AppTheme.NoActionBar" />
+68-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:55:13-56
+69        <activity
+69-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:56:9-58:59
+70            android:name="moshiko.study.appupload.MainActivity"
+70-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:57:13-41
+71            android:theme="@style/AppTheme.NoActionBar" />
+71-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:58:13-56
+72        <activity
+72-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:59:9-61:59
+73            android:name="moshiko.study.appupload.LoginActivity"
+73-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:60:13-42
+74            android:theme="@style/AppTheme.NoActionBar" />
+74-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:61:13-56
+75        <activity
+75-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:62:9-64:59
+76            android:name="moshiko.study.appupload.RegisterActivity"
+76-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:63:13-45
+77            android:theme="@style/AppTheme.NoActionBar" />
+77-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:64:13-56
+78        <activity
+78-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:65:9-74:20
+79            android:name="moshiko.study.appupload.SplashActivity"
+79-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:66:13-43
+80            android:label="@string/app_name"
+80-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:67:13-45
+81            android:theme="@style/AppTheme.NoActionBar" >
+81-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:68:13-56
+82            <intent-filter>
+82-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:69:13-73:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:70:17-69
+83-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:70:25-66
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:72:17-77
+85-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:72:27-74
+86            </intent-filter>
+87        </activity>
+88
+89        <service
+89-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:76:9-83:19
+90            android:name="moshiko.study.appupload.notifications.FirebaseService"
+90-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:77:13-58
+91            android:enabled="true"
+91-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:78:13-35
+92            android:exported="true" >
+92-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:79:13-36
+93            <intent-filter>
+93-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:80:13-82:29
+94                <action android:name="com.google.firebase.INSTNCE_ID_SERVICE" />
+94-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:81:17-81
+94-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:81:25-78
+95            </intent-filter>
+96        </service>
+97        <service
+97-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:84:9-91:19
+98            android:name="moshiko.study.appupload.notifications.FirebaseMessaging"
+98-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:85:13-60
+99            android:enabled="true"
+99-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:86:13-35
+100            android:exported="true" >
+100-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:87:13-36
+101            <intent-filter>
+101-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:88:13-90:29
+102                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+102-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:89:17-78
+102-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:89:25-75
+103            </intent-filter>
+104        </service>
+105        <!--
+106             FirebaseMessagingService performs security checks at runtime,
+107             but set to not exported to explicitly avoid allowing another app to call it.
+108        -->
+109        <service
+109-->[com.google.firebase:firebase-messaging:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/5be6b45a4fae50214fe691021d3e248f/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:28:9-34:19
+110            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+110-->[com.google.firebase:firebase-messaging:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/5be6b45a4fae50214fe691021d3e248f/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:29:13-82
+111            android:exported="false" >
+111-->[com.google.firebase:firebase-messaging:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/5be6b45a4fae50214fe691021d3e248f/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:30:13-37
+112            <intent-filter android:priority="-500" >
+112-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:88:13-90:29
+113                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+113-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:89:17-78
+113-->/Users/moshiko/AndroidStudioProjects/moshiko/AppUpload /app/src/main/AndroidManifest.xml:89:25-75
+114            </intent-filter>
+115        </service>
+116
+117        <activity
+117-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+118            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+118-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+119            android:excludeFromRecents="true"
+119-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+120            android:exported="true"
+120-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+121            android:launchMode="singleTask"
+121-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+122            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+122-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+124
+125        <service
+125-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
+126            android:name="com.google.firebase.components.ComponentDiscoveryService"
+126-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
+127            android:directBootAware="true"
+127-->[com.google.firebase:firebase-common:19.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/89222d334c30dd204ba6710874cd68d6/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+128            android:exported="false" >
+128-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+129            <meta-data
+129-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+130                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+130-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-auth:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-database:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:32:13-34:85
+133                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+133-->[com.google.firebase:firebase-database:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:33:17-109
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-database:19.2.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:34:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-storage:19.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a35127b4be6670f1ae0c091bde20438e/firebase-storage-19.1.0/AndroidManifest.xml:33:13-35:85
+136                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+136-->[com.google.firebase:firebase-storage:19.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a35127b4be6670f1ae0c091bde20438e/firebase-storage-19.1.0/AndroidManifest.xml:34:17-107
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-storage:19.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a35127b4be6670f1ae0c091bde20438e/firebase-storage-19.1.0/AndroidManifest.xml:35:17-82
+138            <meta-data
+138-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/156f946ae01c324cb8270e4ec3cfe231/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+139                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+139-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/156f946ae01c324cb8270e4ec3cfe231/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/156f946ae01c324cb8270e4ec3cfe231/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+141            <meta-data
+141-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:32:13-34:85
+142                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+142-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:33:17-96
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:34:17-82
+144        </service>
+145
+146        <activity
+146-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+147            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+147-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+148            android:excludeFromRecents="true"
+148-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+149            android:exported="false"
+149-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+151        <!--
+152            Service handling Google Sign-In user revocation. For apps that do not integrate with
+153            Google Sign-In, this service will never be started.
+154        -->
+155        <service
+155-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+156            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+156-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+157            android:exported="true"
+157-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+158            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+158-->[com.google.android.gms:play-services-auth:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/f93910dcc4bbfd964f949e2ecee79f63/play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+159
+160        <receiver
+160-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:37:9-44:20
+161            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+161-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:38:13-78
+162            android:exported="true"
+162-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:39:13-36
+163            android:permission="com.google.android.c2dm.permission.SEND" >
+163-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:40:13-73
+164            <intent-filter>
+164-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:41:13-43:29
+165                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+165-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:42:17-81
+165-->[com.google.firebase:firebase-iid:20.0.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/a16fe70d630c445747896e733ad01f6a/firebase-iid-20.0.1/AndroidManifest.xml:42:25-78
+166            </intent-filter>
+167        </receiver>
+168
+169        <activity
+169-->[com.google.android.gms:play-services-base:17.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+170            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+170-->[com.google.android.gms:play-services-base:17.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+171            android:exported="false"
+171-->[com.google.android.gms:play-services-base:17.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+172            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+172-->[com.google.android.gms:play-services-base:17.1.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+173
+174        <provider
+174-->[com.google.firebase:firebase-common:19.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/89222d334c30dd204ba6710874cd68d6/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+175            android:name="com.google.firebase.provider.FirebaseInitProvider"
+175-->[com.google.firebase:firebase-common:19.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/89222d334c30dd204ba6710874cd68d6/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+176            android:authorities="moshiko.study.appupload.firebaseinitprovider"
+176-->[com.google.firebase:firebase-common:19.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/89222d334c30dd204ba6710874cd68d6/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+177            android:exported="false"
+177-->[com.google.firebase:firebase-common:19.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/89222d334c30dd204ba6710874cd68d6/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+178            android:initOrder="100" />
+178-->[com.google.firebase:firebase-common:19.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/89222d334c30dd204ba6710874cd68d6/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+179
+180        <receiver
+180-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+181            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+181-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+182            android:enabled="true"
+182-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+183            android:exported="false" >
+183-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+184        </receiver>
+185        <receiver
+185-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+186            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+186-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+187            android:enabled="true"
+187-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+188            android:exported="true"
+188-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+189            android:permission="android.permission.INSTALL_PACKAGES" >
+189-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+190            <intent-filter>
+190-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+191                <action android:name="com.android.vending.INSTALL_REFERRER" />
+191-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+191-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+192            </intent-filter>
+193        </receiver>
+194
+195        <service
+195-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+196            android:name="com.google.android.gms.measurement.AppMeasurementService"
+196-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+197            android:enabled="true"
+197-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+198            android:exported="false" />
+198-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+199        <service
+199-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+200-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+201            android:enabled="true"
+201-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+203            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+203-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/b0936ce58fc7c6864284d0bd3810b836/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+204        <activity
+204-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:29:9-33:64
+205            android:name="com.google.android.gms.ads.AdActivity"
+205-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:30:13-65
+206            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+206-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:31:13-122
+207            android:exported="false"
+207-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:32:13-37
+208            android:theme="@android:style/Theme.Translucent" />
+208-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:33:13-61
+209
+210        <provider
+210-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:35:9-39:39
+211            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+211-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:36:13-76
+212            android:authorities="moshiko.study.appupload.mobileadsinitprovider"
+212-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:37:13-73
+213            android:exported="false"
+213-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:38:13-37
+214            android:initOrder="100" />
+214-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/61aba1c1b26ea922327177ea31395e67/play-services-ads-lite-18.3.0/AndroidManifest.xml:39:13-36
+215
+216        <meta-data
+216-->[com.google.android.gms:play-services-basement:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/33a45adad2b9ee448ce79876f3f7aa0b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+217            android:name="com.google.android.gms.version"
+217-->[com.google.android.gms:play-services-basement:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/33a45adad2b9ee448ce79876f3f7aa0b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+218            android:value="@integer/google_play_services_version" />
+218-->[com.google.android.gms:play-services-basement:17.0.0] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/33a45adad2b9ee448ce79876f3f7aa0b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+219
+220        <provider
+220-->[com.squareup.picasso:picasso:2.71828] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/3e9209f06da10c4ab13f24b8b5c81a3f/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+221            android:name="com.squareup.picasso.PicassoProvider"
+221-->[com.squareup.picasso:picasso:2.71828] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/3e9209f06da10c4ab13f24b8b5c81a3f/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+222            android:authorities="moshiko.study.appupload.com.squareup.picasso"
+222-->[com.squareup.picasso:picasso:2.71828] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/3e9209f06da10c4ab13f24b8b5c81a3f/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+223            android:exported="false" />
+223-->[com.squareup.picasso:picasso:2.71828] /Users/moshiko/.gradle/caches/transforms-2/files-2.1/3e9209f06da10c4ab13f24b8b5c81a3f/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+224    </application>
+225
+226</manifest>

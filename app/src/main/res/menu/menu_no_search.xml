@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="moshiko.study.appupload.DashboardActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="101"
+        android:title="@string/Search"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="always"
+        android:visible="false"
+        app:actionViewClass="android.widget.SearchView" />
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:orderInCategory="102"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_post"
+        android:title="Add Post"
+        app:showAsAction="always"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_add_white"/>
+</menu>
